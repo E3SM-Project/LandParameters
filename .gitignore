@@ -1,0 +1,5 @@
+# Ignore netCDF files.
+*.nc
+
+# Ignore temporary CLM parameter files
+tmp_clm_params.*.txt
