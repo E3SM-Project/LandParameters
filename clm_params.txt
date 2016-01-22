@@ -877,6 +877,17 @@ variables:
 		np_s4_new:long_name = "NP ratio for soil 4" ;
 		np_s4_new:units = "none" ;
 		np_s4_new:coordinates = "pftname" ;
+        double convfact(pft) ;
+                convfact:long_name = "conversion factor from gC/m2 to bu/acre" ;
+        double fyield(pft) ;
+                fyield:long_name = "fraction of grain that is actually harvested" ;
+                fyield:units = "unitless" ;
+        double presharv(pft) ;
+                presharv:long_name = "porportion of residue harvested with grain" ;
+                presharv:units = "unitless" ;
+        double root_dmx(pft) ;
+                root_dmx:long_name = "maximum rooting depth of crops" ;
+                root_dmx:units = "m" ;
 
 // global attributes:
 		:Conventions = "CF-1.0" ;
@@ -1515,4 +1526,16 @@ data:
  np_s3_new = 50 ;
 
  np_s4_new = 50 ;
+
+ convfact = 999, 999, 999, 999, 999, 999, 999, 999, 999, 999, 999, 999, 999,
+    999, 999, 150, 150, 159, 159, 149, 149, 149, 149, 149, 149 ;
+
+ fyield = 999, 999, 999, 999, 999, 999, 999, 999, 999, 999, 999, 999, 999,
+    999, 999, 0.85, 0.85, 1, 1, 0.85, 0.85, 0.85, 0.85, 0.85, 0.85 ;
+
+ presharv = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0.30, 0.30, 0.30, 0.30, 0.30, 0.30, 0.30, 0.30 ;
+
+ root_dmx = 999, 999, 999, 999, 999, 999, 999, 999, 999, 999, 999, 999, 999,
+    999, 999, 999, 999, 1.20, 1.20, 0.90, 0.90, 0.90, 0.90, 1.60, 1.60 ;
 }
