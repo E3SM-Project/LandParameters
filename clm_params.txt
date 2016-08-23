@@ -790,9 +790,6 @@ variables:
 	double sf_no3(allpfts) ;
 		sf_no3:long_name = "Soluble fraction of NO3" ;
 		sf_no3:units = "unitless" ;
-	double shape_fluxprof_param1(allpfts) ;
-		shape_fluxprof_param1:long_name = "Shape parameter of advection/diffusion profile" ;
-		shape_fluxprof_param1:units = "unitless" ;
 	double smp_crit(allpfts) ;
 		smp_crit:long_name = "Critical soil moisture potential to reduce oxidation (mm) due to dessication of methanotrophs above the water table" ;
 		smp_crit:units = "mm" ;
@@ -1755,8 +1752,6 @@ data:
  sf_minn = 0.10000000000000001 ;
 
  sf_no3 = 1 ;
-
- shape_fluxprof_param1 = 10000000000 ;
 
  smp_crit = -240000 ;
 
