@@ -107,7 +107,7 @@ if [ -z $output_filename ]; then
   output_filename=clm_params_${abbv_hash}_c${date_YYMMDD}.nc
 fi
 
-cmd="ncgen -b -o $output_filename -k netCDF-4 ${tmp_params_fname}"
+cmd="ncgen -b -o $output_filename -k classic ${tmp_params_fname}"
 eval ${cmd}
 if [ $verbose -eq 1 ]
 then
