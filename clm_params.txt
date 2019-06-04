@@ -1050,6 +1050,14 @@ variables:
 		nstor:long_name = "" ;
 		nstor:units = "" ;
 		nstor:coordinates = "pftname" ;
+	double gcpsi(pft) ;
+		gcpsi:long_name = "bare ground cover LAI-decay parameter" ;
+		gcpsi:units = "none" ;
+		gcpsi:coordinates = "pftname" ;
+	double pftcc(pft) ;
+		pftcc:long_name = "plant cover reduction factor for sediment transport capacity" ;
+		pftcc:units = "none" ;
+		pftcc:coordinates = "pftname" ;
 	double tc_stress(allpfts) ;
 		tc_stress:long_name = "" ;
 		tc_stress:units = "" ;
@@ -2299,6 +2307,13 @@ data:
 
  nstor = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
     0, 0 ;
+
+ gcpsi = 0, 0.65, 0.6, 0.6, 0.8, 0.7, 0.8, 0.7, 0.65, 0.5, 0.4, 0.4, 0.3,
+    0.4, 0.3, 0.45, 0.45, 0.62, 0.62, 0.44, 0.44, 0.45, 0.45, 0.69, 0.69 ;
+
+ pftcc = 1, 0.001, 0.001, 0.001, 0.002, 0.002, 0.002, 0.002, 0.002, 0.01,
+    0.01, 0.01, 0.1, 0.1, 0.1, 0.15, 0.15, 0.2, 0.2, 0.15, 0.15, 0.15, 0.15,
+    0.3, 0.3 ;
 
  tc_stress = -2 ;
 }
