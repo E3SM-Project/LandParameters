@@ -138,10 +138,10 @@ variables:
 		fd_pft:units = "hr" ;
 		fd_pft:long_name = "Fire duration" ;
 		fd_pft:_FillValue = -999.99000000000001 ;
-	double fertnitro(pft) ;
-		fertnitro:long_name = "Max fertilizer to be applied in total" ;
-		fertnitro:units = "kg N/m2" ;
-		fertnitro:coordinates = "pftname" ;
+	double manunitro(pft) ;
+		manunitro:long_name = "Max manure to be applied in total" ;
+		manunitro:units = "kg N/m2" ;
+		manunitro:coordinates = "pftname" ;
 	double ffrootcn(pft) ;
 		ffrootcn:long_name = "Fine root C:N during organ fill" ;
 		ffrootcn:units = "gC/gN" ;
@@ -1299,7 +1299,7 @@ data:
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ;
 
- fertnitro = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 
+ manunitro = 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
     0.015, 0.015, 0.008, 0.008, 0.008, 0.008, 0.0025, 0.0025, 0, 0, 
     0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0.02, 0.02, 0.0084, 0.0084, 0.0084, 0.0084, 0, 0, 0, 0 ;
 
